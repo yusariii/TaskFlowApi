@@ -34,7 +34,16 @@ public class Comment {
 
     private LocalDateTime updatedAt;
 
-    // Getters and Setters
+    public Comment() {
+    }
+
+    public Comment(String content, Task task, User author) {
+        this.content = content;
+        this.task = task;
+        this.author = author;
+        this.createdAt = LocalDateTime.now();
+        this.updatedAt = LocalDateTime.now();
+    }
 
     public Long getId() {
         return id;

@@ -57,7 +57,21 @@ public class Task {
 
     private LocalDateTime updateAt;
 
-    // Getters and Setters
+    public Task() {
+    }
+
+    public Task(String title, String description, TaskStatus status, TaskPriority priority, LocalDate dueDate, Project project, User creator, User assignee) {
+        this.title = title;
+        this.description = description;
+        this.status = status;
+        this.priority = priority;
+        this.dueDate = dueDate;
+        this.project = project;
+        this.creator = creator;
+        this.assignee = assignee;
+        this.createAt = LocalDateTime.now();
+        this.updateAt = LocalDateTime.now();
+    }
 
     public Long getId() {
         return id;

@@ -29,7 +29,14 @@ public class ProjectMember {
 
     private LocalDateTime joinedAt;
 
-    // Getters and Setters
+    public ProjectMember() {
+    }
+
+    public ProjectMember(Project project, User user) {
+        this.project = project;
+        this.user = user;
+        this.joinedAt = LocalDateTime.now();
+    }
 
     public Long getId() {
         return id;

@@ -49,7 +49,27 @@ public class AuditLogDocument {
 
     private Map<String, Object> metaData;
 
-    // Getters and Setters
+    public AuditLogDocument() {
+    }
+
+    public AuditLogDocument(AuditActionType actionType, AuditEntityType entityType, String entityId,
+            String entityName, Long performedByUserId, String performedByEmail, Long projectId, Long taskId,
+            String description, String requestPath, String requestMethod, LocalDateTime timestamp,
+            Map<String, Object> metaData) {
+        this.actionType = actionType;
+        this.entityType = entityType;
+        this.entityId = entityId;
+        this.entityName = entityName;
+        this.performedByUserId = performedByUserId;
+        this.performedByEmail = performedByEmail;
+        this.projectId = projectId;
+        this.taskId = taskId;
+        this.description = description;
+        this.requestPath = requestPath;
+        this.requestMethod = requestMethod;
+        this.timestamp = timestamp;
+        this.metaData = metaData;
+    }
 
     public String getId() {
         return id;

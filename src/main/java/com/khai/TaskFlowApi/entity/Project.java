@@ -44,7 +44,18 @@ public class Project {
 
     private LocalDateTime updatedAt;
 
-    // Getters and Setters
+    public Project() {
+    }
+
+    public Project(String code, String name, String description, ProejctStatus status, User owner) {
+        this.code = code;
+        this.name = name;
+        this.description = description;
+        this.status = status;
+        this.owner = owner;
+        this.createdAt = LocalDateTime.now();
+        this.updatedAt = LocalDateTime.now();
+    }
 
     public Long getId() {
         return id;

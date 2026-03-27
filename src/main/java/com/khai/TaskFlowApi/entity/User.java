@@ -47,7 +47,19 @@ public class User {
 
     private LocalDateTime updatedAt;
 
-    // Getters and Setters
+    public User() {
+    }
+
+    public User(String email, String password, String fullName, UserRole role, UserStatus status, String avatarUrl) {
+        this.email = email;
+        this.password = password;
+        this.fullName = fullName;
+        this.role = role;
+        this.status = status;
+        this.avatarUrl = avatarUrl;
+        this.createdAt = LocalDateTime.now();
+        this.updatedAt = LocalDateTime.now();
+    }
 
     public Long getId() {
         return id;
