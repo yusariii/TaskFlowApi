@@ -1,5 +1,7 @@
 package com.khai.TaskFlowApi.enums;
 
-public class TaskPriority {
-    
+public enum TaskPriority {
+    LOW,
+    MEDIUM,
+    HIGH
 }

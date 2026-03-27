@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 
 import com.khai.TaskFlowApi.enums.UserRole;
 import com.khai.TaskFlowApi.enums.UserStatus;
-import com.mongodb.lang.Nullable;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -14,6 +13,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.annotation.Nullable;
 
 @Entity
 @Table(name = "users")

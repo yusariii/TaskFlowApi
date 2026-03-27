@@ -1,5 +1,9 @@
 package com.khai.TaskFlowApi.enums;
 
-public class AuditEntityType {
-    
+public enum AuditEntityType {
+    USER,
+    PROJECT,
+    TASK,
+    COMMENT,
+    AUTH
 }

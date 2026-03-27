@@ -1,5 +1,19 @@
 package com.khai.TaskFlowApi.enums;
 
-public class AuditActionType {
-    
+public enum AuditActionType {
+    REGISTER,
+    LOGIN,
+    CREATE_PROJECT,
+    UPDATE_PROJECT,
+    DELETE_PROJECT,
+    ADD_PROJECT_MEMBER,
+    CREATE_TASK,
+    UPDATE_TASK,
+    UPDATE_TASK_STATUS,
+    ASSIGN_TASK,
+    DELETE_TASK,
+    CREATE_COMMENT,
+    UPDATE_COMMENT,
+    LOCK_USER,
+    UNLOCK_USER
 }

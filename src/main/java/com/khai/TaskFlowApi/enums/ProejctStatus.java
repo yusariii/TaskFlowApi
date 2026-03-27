@@ -1,5 +1,6 @@
 package com.khai.TaskFlowApi.enums;
 
-public class ProejctStatus {
-    
+public enum ProejctStatus {
+    ACTIVE,
+    ARCHIVED
 }
